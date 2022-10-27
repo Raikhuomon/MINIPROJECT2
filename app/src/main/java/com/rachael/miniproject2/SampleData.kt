@@ -1,8 +1,12 @@
 package com.rachael.miniproject2
 
+import android.R
+
 class SampleData {
     val BEST_FRIENDS: List<User> = listOf(
-        User("LOML", "I'll be home by 9"),
+        User("LOML", "I'll be home by 9",),
+        User("Lil sis", "I'm answering you enthusiastically"),
+        User("Pistol", "I'll need it by december"),
         User("Dami FES", "Babe long time"),
         User("Okhuoya", "Baby is fine oo. thank you oremi"),
         User("Mary IE CONNECT", "I don do am"),

@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class BestFriendsAdapter(val context: Context) : RecyclerView.Adapter<BestFriendsAdapter.BFViewHolder>() {
     private val sampleData = SampleData()
-    private val listOfFriends = sampleData.BEST_FRIENDS
+    private val bestFriends = sampleData.BEST_FRIENDS
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BFViewHolder {
         val itemView = LayoutInflater.from(context).inflate(R.layout.best_friends_layout, parent, false)
@@ -18,12 +18,12 @@ class BestFriendsAdapter(val context: Context) : RecyclerView.Adapter<BestFriend
     }
 
     override fun onBindViewHolder(holder: BFViewHolder, position: Int) {
-        holder.userName.text = listOfFriends[position].userName
-        holder.status.text = listOfFriends[position].status
+        holder.userName.text = bestFriends[position].userName
+        holder.status.text = bestFriends[position].status
     }
 
     override fun getItemCount(): Int {
-        return listOfFriends.size
+        return bestFriends.size
     }
 
     class BFViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
